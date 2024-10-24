@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <button onclick="operatorPlus()">+</button>
+    <button onclick="operatorMinus()">-</button>
+    <button onclick="operatorMultiply()">*</button>
+    <button onclick="operatorDivide()">/</button>
+    <button onclick="addOne()">1</button>
+    <button onclick="addTwo()">2</button>
+    <button onclick="addThree()">3</button>
+    <button onclick="addFour()">4</button>
+    <button onclick="addFive()">5</button>
+    <button onclick="addSix()">6</button>
+    <button onclick="addSeven()">7</button>
+    <button onclick="addEight()">8</button>
+    <button onclick="addNine()">9</button>
+    <button onclick="showValue()">=</button>
+    <button onclick="cancel(),showValue()">Reset</button>
+
+    <script>
+      let value = 0;
+      let operator = 0;
+
+      function operatorPlus(value, operator) {
+        value = value + operator;
+      }
+      function operatorMinus() {
+        value = value - operator;
+      }
+      function operatorMultiply() {
+        value = value * operator;
+      }
+      function operatorDivide() {
+        value = value / operator;
+      }
+      function addOne() {
+        operator = 1;
+      }
+      function addTwo() {
+        operator = 2;
+      }
+      function addThree() {
+        value = value + 3;
+      }
+      function addFour() {
+        value = value + 4;
+      }
+      function addFive() {
+        value = value + 5;
+      }
+      function addSix() {
+        value = value + 6;
+      }
+      function addSeven() {
+        value = value + 7;
+      }
+      function addEigth() {
+        value = value + 8;
+      }
+      function addNine() {
+        value = value + 9;
+      }
+      function cancel() {
+        value = 0;
+      }
+      function showValue() {
+        alert("The value is: " + value);
+      }
+    </script>
+  </body>
+</html>
